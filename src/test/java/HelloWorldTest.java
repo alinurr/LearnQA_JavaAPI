@@ -18,4 +18,12 @@ public class HelloWorldTest {
         System.out.println("Hello from Alinur");
     }
 
+    @Test
+    public void testGetRequest(){
+        Response response = RestAssured
+                .get("https://playground.learnqa.ru/api/get_text")
+                .andReturn();
+        response.prettyPrint();
+    }
+
 }
