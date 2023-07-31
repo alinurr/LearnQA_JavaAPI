@@ -21,9 +21,9 @@ public class Ex7 {
             int statusCode = response.getStatusCode();
             int count = 0;
             if (statusCode == 200){
-                String locationHeader = response.getHeader("Location");
                 count++;
-                System.out.println(locationHeader + " " +count);
+                String locationHeader = response.getHeader("Location");
+                System.out.println(locationHeader + " " + count);
             }
 
     }
