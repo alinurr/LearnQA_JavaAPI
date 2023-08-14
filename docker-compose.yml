@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  test-runner:
+    build: .
+    image: java-api-tests
+    volumes:
+      - .:/tests/
